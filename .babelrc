@@ -1,0 +1,28 @@
+{
+  "env": {
+    "development": {
+      "presets": [["es2015", { "modules": false }], "react", "stage-0"]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ], "@babel/preset-react"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-dynamic-import"
+      ]
+    },
+    "production": {
+      "presets": [["es2015", { "modules": false }], "react", "stage-0"],
+      "plugins": ["transform-react-remove-prop-types"]
+    }
+  }
+}

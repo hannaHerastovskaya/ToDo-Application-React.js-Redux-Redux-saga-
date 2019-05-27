@@ -1,0 +1,7 @@
+node_modules/
+public/
+.idea/
+yarn-error.log
+coverage/
+.scannerwork/
+.vscode/
